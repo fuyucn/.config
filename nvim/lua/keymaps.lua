@@ -34,3 +34,7 @@ map('n', '-', '<C-x>', opts)
 
 -- Select all
 map('n', '<C-a>', "gg<S-v>G", opts)
+
+
+--
+map('n', '<space>e', vim.diagnostic.open_float)

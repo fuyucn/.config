@@ -3,6 +3,7 @@ return {
     -- indent guides for Neovim
     "lukas-reineke/indent-blankline.nvim",
     config = function()
+      ---@diagnostic disable-next-line: unused-local
       local highlight = {
         "RainbowRed",
         "RainbowYellow",
@@ -31,7 +32,7 @@ return {
         indent = {
           char = "│",
           tab_char = "│",
-          highlight = highlight,
+          --highlight = highlight,
         },
         scope = {
           enabled = false,

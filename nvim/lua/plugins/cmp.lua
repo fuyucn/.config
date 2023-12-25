@@ -42,7 +42,7 @@ return {
         ["<C-Space>"] = cmp.mapping.complete(),
         ["<C-e>"] = cmp.mapping.abort(),
         ["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-      }), -- end of mapping section
+      }),                                                  -- end of mapping section
 
       -- Managing Sources for completions
       sources = cmp.config.sources({
@@ -64,7 +64,8 @@ return {
         },
         {
           { name = "buffer" },
-        }),
+        }
+      ),
     })
 
     -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
@@ -80,8 +81,8 @@ return {
       mapping = cmp.mapping.preset.cmdline(),
       sources = cmp.config.sources({
         { name = "path" },
-        }, {
-          { name = "cmdline" },
+      }, {
+        { name = "cmdline" },
       }),
     })
 
